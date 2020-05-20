@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo $0: "usage: car <search>"
+    exit 1
+fi
+
+awk -F "|" '/'$1'/ {print $1, $10, $16}' list.csv | sed 's/\"//g' | sort -n -k2 | cut -c 2-
