@@ -11,7 +11,7 @@
 
 - getdegem.sh: ind and download the link to the car models list for the DMV CSV file 
 
-"daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ | tail
+daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ | tail
 17403902 2020 2.0I 2020-06-21
 17444002 2020 2.0I 2020-06-22
 80020101 2020 2.0I 2020-12-31
@@ -22,6 +22,7 @@
 80099901 2020 2.0I 2021-01-22
 80170701 2020 2.0I 2021-02-24
 80177101 2020 2.0I 2021-05-16
+
 daniel@DESKTOP-PPNVIGV:~/cars$ car 80177101 -a
 BRZ - 2.0I - 1998 cc - 200 hp
 801-771-01
@@ -29,6 +30,7 @@ BRZ - 2.0I - 1998 cc - 200 hp
 Gear: Manual
 Rishoi: 5
 Test until: 2021-05-16
+
 daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ -c
 2012 - 10
 2013 - 14
@@ -40,4 +42,4 @@ daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ -c
 2019 - 45
 2020 - 21
 
-Total:  151"
+Total:  151
