@@ -49,3 +49,6 @@ Total:  151
 ```
 
 You can add the get* files to crontab to run once a day and getting the latest file from the DMV.
+'''
+0 0 * * * /home/daniel/getlist.sh
+'''
