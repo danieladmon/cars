@@ -6,7 +6,7 @@ carPlate=""
 tmpFile="/tmp/output.txt"
 
 if [ $# == 0 ]; then
-  echo $0: "Usage: CM <search> (-c / -n / -f / -a)"
+  echo $0: "Usage: CAR <search> (-c / -n / -f / -a)"
   exit 1
 fi
 
