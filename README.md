@@ -9,8 +9,10 @@
          
 - getlist.sh: find and download the link to the full car data list for the DMV CSV file
 
-- getdegem.sh: ind and download the link to the car models list for the DMV CSV file 
+- getdegem.sh: find and download the link to the car models list for the DMV CSV file 
 
+
+# Example:
 ```
 daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ | tail
 17403902 2020 2.0I 2020-06-21
@@ -45,3 +47,5 @@ daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ -c
 
 Total:  151
 ```
+
+You can add the get* files to crontab to run once a day and getting the latest file from the DMV.
