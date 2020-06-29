@@ -11,6 +11,7 @@
 
 - getdegem.sh: ind and download the link to the car models list for the DMV CSV file 
 
+```
 daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ | tail
 17403902 2020 2.0I 2020-06-21
 17444002 2020 2.0I 2020-06-22
@@ -43,3 +44,4 @@ daniel@DESKTOP-PPNVIGV:~/cars$ car BRZ -c
 2020 - 21
 
 Total:  151
+```
