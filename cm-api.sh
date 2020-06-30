@@ -1,8 +1,8 @@
 #!/bin/bash
 
 search=$1
-isNum=false
 carPlate=""
+isNum=false
 tmpFile="/tmp/output.txt"
 url="https://data.gov.il/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&limit=99999"
 url_Degem="https://data.gov.il/api/3/action/datastore_search?resource_id=142afde2-6228-49f9-8a29-9b6c3a0cbe40"
