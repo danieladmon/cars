@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 search=$(echo $1 | sed 's/\ /|/g')
@@ -18,14 +19,14 @@ case "$2" in
         -c)
                 curl -s "$url&q=$search" | jq .result.records[].shnat_yitzur | sort  > $tmpFile
                 if [[ -f $tmpFile ]]; then
-                        years=$(awk -F" " '{print $1}' $tmpFile | sort | uniq)
+                        years=$(awk -F" " '{print $1}' $tmpFile | sed 's/"//g' | sort | uniq)
                         for y in $years;
                         do
-                                count=$(awk '$1=='$y'' $tmpFile | sort -n | wc -l)
+                                count=$(sed 's/"//g' $tmpFile | awk '$1=='$y'' | sort -n | wc -l)
                                 echo $y - $count
                         done
                         echo -e "\nTotal: " $(wc -l < $tmpFile)
-                        rm $tmpFile
+                        #rm $tmpFile
                 else
                         echo "Error: there is no results for the query"
                 fi
