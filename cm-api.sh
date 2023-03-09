@@ -26,7 +26,7 @@ case "$2" in
                                 echo $y - $count
                         done
                         echo -e "\nTotal: " $(wc -l < $tmpFile)
-                        #rm $tmpFile
+                        rm $tmpFile
                 else
                         echo "Error: there is no results for the query"
                 fi
